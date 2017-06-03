@@ -29,10 +29,10 @@
 	var removeImg = document.getElementById("img-normal")
 
 	window.onscroll = function(){
-		if (document.body.scrollTop > 50){
+		if (document.body.scrollTop > 70){
 			document.getElementById("scrollerP").className = "scrolled";
 			addA.classList.remove("hide")
-			addA.classList.add("login")
+			addA.classList.add("login-new")
 			addImg.classList.remove("hide")
 			removeImg.classList.add("hide")
 		}else{

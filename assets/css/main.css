@@ -16,10 +16,11 @@ nav{
 	position: fixed;
 	width: 100%;
 	z-index: 9999;
+	flex-wrap: wrap;
 }
 
 nav.flex-container{
-	justify-content: flex-end;
+	justify-content: flex-start;
 	align-items: center;
 	background-color: rgba(0,0,0,0);
 
@@ -27,10 +28,11 @@ nav.flex-container{
 
 nav img{
 	margin-right: auto;
-	margin-left: 20px;
+	margin-left: 40px;
 }
 
 nav a{
+	flex-direction: row;
 	display: inline-block;
 	padding: 15px;
 	text-decoration: none;
@@ -41,7 +43,7 @@ nav a{
 nav a:hover:not(.active){
 	background-color: #ff00bf;
 	color: whitesmoke;
-	border-radius: 10px;
+	border-radius: 20px;
 }
 
 
@@ -57,9 +59,14 @@ nav a:hover:not(.active){
 
 nav .login{
 	border: 2px solid whitesmoke;
-	border-radius: 10px;
+	border-radius: 20px;
 }
 
+.login-new{
+	border: 2px solid #ff00bf;
+	border-radius: 20px;
+	color: #ff00bf
+}
 
 /**/
 
@@ -170,34 +177,48 @@ video{
 
 /**/
 
+.vidios{
+	background-color: whitesmoke;
+	align-items: center;
+	flex-direction: column;
+}
 
+.vidios h6{
+	font-size: 1em;
+}
+.vidios h4{
+	font-size: 2.5em;
+	padding-bottom: 20px;
+}
+
+.vidios .el-texto{
+	flex-direction: column;
+	max-width: 675px;
+	padding: 40px;
+}
+/**/
 
 footer{
 	background-color: #333447;
 	width: 100%;
-	height: 400px;
-}
-
-
-
-footer .flex-container{
+	height: auto;
 	flex-direction: row;
 	justify-content: space-around;
-	align-items: center;
 }
+
 
 hr{
 	max-width: 350px;
 	align-items: center;
 	margin: 20px;
 }
-
+/*
 .footer-login .footer-partner .footer-learn .footer-imgs{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-
+*/
 .footer-rrss a{
 	padding: 5px 7px;
 	font-size: 20px;
@@ -211,17 +232,11 @@ hr{
 	padding: 0 5px;
 }
 
-.footer-imgs .img1{
+.img1, .img2, .img3{
 	width: 100px;
 }
 
-.footer-imgs .img2{
-	width: 100px;
-}
 
-.footer-imgs .img3{
-	width: 100px;
-}
 
 
 /**/
