@@ -3,20 +3,26 @@
 	margin: 0;
 	padding: 0;
 }
+
 body{
-	background-color: #2b1e66;
+	background-color: #6b1d82;
 }
 
 .flex-container{
 	display: flex;
 }
 
+nav{
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+}
+
 nav.flex-container{
 	justify-content: flex-end;
 	align-items: center;
 	background-color: rgba(0,0,0,0);
-	padding: 20px;
-	color: #fff;
+
 }
 
 nav img{
@@ -38,17 +44,109 @@ nav a:hover:not(.active){
 	border-radius: 10px;
 }
 
+
+/**/
+.hide{
+	display: none;
+}
+
+.scrolled{
+	background-color: #EDE9E2;
+	color: #333447;
+}
+
 nav .login{
 	border: 2px solid whitesmoke;
 	border-radius: 10px;
 }
 
+
+/**/
+
+
+video{
+	max-width: 1350px;
+}
+
+.cajita-blanca{
+	width: 450px;
+	height: 370px;
+	background-color: #EDE9E2;
+	padding: 30px;
+	position: absolute;
+	top: 200px;
+	right: 0;
+}
+
+.turn-miles{
+	color: #352384; 
+	padding-top: 10px;
+	font-size: 55px;
+	font-weight: bolder;
+}
+
+.sign-up{
+	color: #352384;
+	font-size: 15px;
+	font-weight: bolder;
+}
+
+.number{
+	width: 90%;
+	height: 25px;
+	color: #4E4D53;
+	background-color: #EDE9E2;
+	font-size: 15px;
+	padding: 10px;
+	border: 0;
+	border-bottom: 1px solid #352384;
+	margin-bottom: 5px;
+}
+
+.become-driver{
+	margin-top: 8px;
+	margin-bottom: 20px;
+	color: #EDE9E2;
+	background-color: #ff00bf;
+	border: 0;
+	border-radius: 10px;
+	padding: 15px;
+	width: 190px;
+	box-shadow: 3px 5px 12px -3px rgba(0,0,0,0.50);
+	cursor: pointer;
+}
+
+.signuptoride{
+	padding: 15px;
+} 
+
+.apllied, .earn-money{
+	color: #75726C;
+	font-size: 10px;
+	padding: 8px;
+}
+
+.link{
+	text-decoration: none;
+	color: #404040;
+}
+
+.link:hover:not(.active){
+	text-decoration: underline;
+}
+
+
+
+
+/**/
 .ride{
 	flex-direction: column;
 	padding: 120px;
 	color: whitesmoke;
 }
-
+.cuerpo{
+	background: linear-gradient(#6b1d82,#2b1e66)
+}
 .ride h4{
 	margin: 30px 0 30px 0;
 	font-size: 2em;
@@ -73,25 +171,57 @@ nav .login{
 /**/
 
 
+
 footer{
 	background-color: #333447;
 	width: 100%;
+	height: 400px;
 }
 
-.footer-login{
-	flex-direction: column;
+
+
+footer .flex-container{
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
 }
 
 hr{
 	max-width: 350px;
+	align-items: center;
+	margin: 20px;
 }
 
-.footer-imgs{
-	width: 20%;
+.footer-login .footer-partner .footer-learn .footer-imgs{
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
+
+.footer-rrss a{
+	padding: 5px 7px;
+	font-size: 20px;
+	color: whitesmoke;
+	border: 2px solid whitesmoke;
+	border-radius: 100px;
+	margin: 40px;
+}
+
+.fa-facebook{
+	padding: 0 5px;
+}
+
+.footer-imgs .img1{
+	width: 100px;
+}
+
+.footer-imgs .img2{
+	width: 100px;
+}
+
+.footer-imgs .img3{
+	width: 100px;
+}
+
 
 /**/
-.cambio-nav{
-	background-color: white;
-	color: #333447;
-}

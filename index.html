@@ -8,13 +8,30 @@
 	<script src="https://use.fontawesome.com/046c2163eb.js"></script>
 </head>
 <body>
-	<nav class="flex-container">
-		<img src="assets/img/logo-white.png" width="100">
-		<a href="#drive">Drive</a>
-		<a href="#explore">Explore</a>
-		<a href="#help">Help</a>
-		<a href="#log-in" class="login">Log in</a>
+	<nav class="flex-container" id="scrollerP">
+		<img src="assets/img/logo-white.png" width="100" id="img-normal">
+		<img src="assets/img/logo-pink.png" width="100" class="hide" id="img-nueva">
+		<a id="a-normal" href="#drive">Drive</a>
+		<a id="a-normal" href="#explore">Explore</a>
+		<a id="a-normal" href="#help">Help</a>
+		<a id="a-normal" href="#log-in" class="login">Log in</a>
+		<a id="a-nueva" href="#" class="hide">Sign up</a>
 	</nav>
+	<header>
+			<div class="img-fondo">
+				<video>
+					<source src="assets/img/hero-video.mp4" type="video/mp4">
+				</video>
+				<div class="cajita-blanca">
+					<p class="turn-miles">TURN MILES INTO MONEY</p>
+					<p class="sign-up">SIGN UP TO DRIVE LYFT</p>
+					<input type="text" class="number" placeholder="Phone number" id="phone"><div id="error"></div><br>
+					<button class="become-driver" type="submit" id="become-driver">BECOME A DRIVER</button>
+					<a class="signuptoride" href="#">Sign up to ride</a>
+					<p class="apllied">Already apllied? Check the status of your application <a class="link" href="https://www.lyft.com/drivers/apply/resume">here.</a></p>
+					<p class="earn-money">Earn money for inviting friends to drive. <a class="link" href="https://www.lyft.com/drive/referrals">Learn more.</a></p>
+				</div>			
+	</header>
 	<section class="cuerpo flex-container">
 		<div class="flex-container ride">
 			<h4>A RIDE IN MINUTES</h4>
@@ -29,8 +46,11 @@
 		</div>
 			<img class="imgphone" src="assets/img/phone.png">
 	</section>
-<footer class="flex-container">
-	<section>
+
+
+
+<footer>
+	<section class="flex-container">
 		<div class="footer-login">
 		<h2>LOG IN</h2>
 		<a href="#">Help</a>
@@ -53,19 +73,18 @@
 			<a href="#">Careers</a>
 		</div>
 		<div class="footer-imgs">
-			<img src="assets/img/google-play.png">
-			<img src="assets/img/google-play.png">
-			<img src="assets/img/microsoft.png">
+			<img class="img1" src="assets/img/google-play.png">
+			<img class="img2" src="assets/img/app-store.png">
+			<img class="img3" src="assets/img/microsoft.png">
 		</div>
-		<div class="footer-rrss">
-			<a href="#">F</a>
-			<a href="#">I</a>
-			<a href="#">T</a>
-		</div>
-		<hr>
-		<p>c Lyft, Inc.TermsPrivacy</p>		
 	</section>
-
+		<div class="footer-rrss">
+			<a href="https://www.facebook.com/lyft/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="https://www.instagram.com/lyft/?hl=es"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			<a href="https://twitter.com/lyft?lang=es"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		</div>
+			<hr>
+		<p>c Lyft, Inc.TermsPrivacy</p>		
 </footer>
 
 	<script type="text/javascript" src="assets/js/main.js"></script>	
