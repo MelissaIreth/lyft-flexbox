@@ -30,7 +30,6 @@ nav img{
 	margin-right: auto;
 	margin-left: 40px;
 	padding-top: 10px;
-	order: -1;
 }
 
 nav a{
@@ -211,26 +210,38 @@ video{
 	color: whitesmoke;
 }
 
-.futer .las-a, .footer-imgs{
+.las-a{
 	text-decoration: none;
 	color: whitesmoke;
-	padding: 30px;
+	margin: 50px;
 	text-align: right;
 }
 
+
+.las-a:hover{
+	color: #ff00bf;
+}
+
 .futer h2{
-	padding: 25px;
+	padding-left: 50px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 hr{
-	max-width: 350px;
-
+ width: 750px;
 }
 
-.footer-login .footer-partner .footer-learn .footer-imgs{
+.footer-login, .footer-partner, .footer-learn, .footer-imgs{
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	margin-left: 100px;
+}
+
+.footer-rrss{
+	margin: 60px;
+	width: auto;
 }
 
 .footer-rrss a{
@@ -246,11 +257,28 @@ hr{
 	padding: 0 5px;
 }
 
-.img1, .img2, .img3{
-	width: 100px;
+.fa-instagram{
+	padding: 0 2px;
 }
 
+.fa-twitter{
+	font-size: 15px;
+}
 
+.footer-rrss a:hover{
+	color: #ff00bf;
+	border: 2px solid #ff00bf;
+}
+
+.img1, .img2, .img3{
+	width: 100px;
+	margin-right: 80px;
+	margin-top: 40px;
+}
+
+footer p{
+	margin: 40px;
+}
 
 
 /**/
